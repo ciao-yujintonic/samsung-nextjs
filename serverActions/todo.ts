@@ -16,7 +16,7 @@ export const api = axios.create(
     }
 )
 export async function fetchTodos() {
-    console.log('proxy log')
-    const { data } = await api.get('/')
+    'use cache'
+    const { data } = await api.get<Todo[]>('/')
     return data
 }

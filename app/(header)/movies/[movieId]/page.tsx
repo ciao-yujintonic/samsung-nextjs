@@ -3,13 +3,6 @@ import Title from "./title";
 import Link from "next/link";
 import { fetchMovieDetails } from "@/serverActions/movie";
 
-export interface Movie {
-    Title: string
-    Poster: string
-    Plot: string
-    imdbID: string
-}
-
 // Page에서 받는 params 그대로 매개변수로 받음
 export async function generateMetadata({ params }: { params: Promise<{ movieId: string }> }) {
     const { movieId } = await params

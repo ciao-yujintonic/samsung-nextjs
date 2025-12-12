@@ -10,5 +10,6 @@ export default function Header() {
         <Link href='/parallel'>Parallel</Link>
         <Link href='/client'>Client Component</Link>
         <Link href='/cache'>Cache</Link>
+        <Link href='/todos'>Todos</Link>
     </header>
 }

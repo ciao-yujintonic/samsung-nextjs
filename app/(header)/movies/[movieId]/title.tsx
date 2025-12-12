@@ -1,6 +1,6 @@
 'use client'
 
-import { Movie } from "./page"
+import { Movie } from "@/serverActions/movie"
 
 export default function Title({ movie }: { movie: Movie }) {
     return (
